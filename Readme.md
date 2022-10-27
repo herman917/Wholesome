@@ -1,6 +1,6 @@
 ### Dev log Oct 26:
 
-[*view-deployment*](https://ws-dev.vercel.app/#get-started)
+[*view-deployment*](https://ws-dev.vercel.app)
 
 1. Add folder for pages.
 2. Finished basic site navigation header + breadcrumbs.
