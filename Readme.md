@@ -2,8 +2,9 @@
 1. Fix Menu link
 2. Change logo image
 3. Mod center content
-4. Remove "首頁" link
+4. RM "首頁" link
 5. Mod pages - Title/Favicons/Navi
+6. RM  pages "H2"
 
 ### Dev log Oct 26:
 
