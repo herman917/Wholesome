@@ -2,6 +2,8 @@
 1. Fix Menu link
 2. Change logo image
 3. Mod center content
+4. Remove "首頁" link
+5. Mod pages - Title/Favicons/Navi
 
 ### Dev log Oct 26:
 
