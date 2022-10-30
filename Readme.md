@@ -1,3 +1,8 @@
+### Dev log Oct 30
+1. Fix Menu link
+2. Change logo image
+3. Mod center content
+
 ### Dev log Oct 26:
 
 [*view-deployment*](https://ws-dev.vercel.app)
