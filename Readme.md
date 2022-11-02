@@ -1,6 +1,7 @@
 ### Dev log Nov 1
 1. Added Product Hero Card
 2. Finished Rough Product Page
+3. Adjusted header height 
 
 ### Dev log Oct 30
 1. Fix Menu link
