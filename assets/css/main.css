@@ -36,6 +36,7 @@
   margin:auto;
   margin-left: 0;
   margin-top: -4px;
+  color: var(--color-secondary);
 }
 
 .pd-tag{
@@ -48,6 +49,12 @@ hr.solid {
   margin-right: 50px;
 }
 
+.responsive {
+  max-width: 100%;
+  width:50%;
+  display:none !important;
+}
+
 
 /* Fonts */
 :root {
@@ -58,7 +65,7 @@ hr.solid {
 
 /* Colors */
 :root {
-  --color-default: #fff;
+  --color-default: rgb(105, 105, 105);
   --color-primary: #feb900;
   --color-secondary: #fff;
   --color-pd1: #009B63;
@@ -306,7 +313,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -1158,7 +1165,6 @@ section {
 .alt-services .img-bg {
   background-size: cover;
   background-position: center center;
-
   
 }
 
