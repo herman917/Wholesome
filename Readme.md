@@ -1,3 +1,6 @@
+### Dev log Nov 1
+1. Added Product Hero Card
+
 ### Dev log Oct 30
 1. Fix Menu link
 2. Change logo image
