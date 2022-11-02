@@ -92,6 +92,10 @@ hr.solid {
   max-width:80%;
 }
 
+.hero h3{
+  color: var(--color-secondary);
+}
+
 
 /* Fonts */
 :root {
@@ -848,7 +852,7 @@ section {
 }
 
 .services .service-item h3 {
-  color: var(--color-default);
+  color: var(--color-secondary);
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
@@ -1568,7 +1572,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   left: 0;
   bottom: 0;
 }
