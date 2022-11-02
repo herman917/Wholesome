@@ -55,6 +55,43 @@ hr.solid {
   display:none !important;
 }
 
+.product-text h1{
+  padding-bottom: 20px;
+}
+
+.project-details{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.green-block{
+  background-color: #009B63;
+  color:#ffffff;
+}
+
+.block-img img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+ 
+}
+
+.block-img{
+  padding-left:0;
+}
+
+.block-row{
+  margin-top:0 !important;
+}
+
+.seventy{
+  max-width:70%;
+}
+
+.eighty{
+  max-width:80%;
+}
+
 
 /* Fonts */
 :root {
