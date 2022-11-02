@@ -15,8 +15,39 @@
 }
 
 .product-des{
-  padding-top: 60px;
+  padding-top: 40px;
+  padding-left: 50px;
+  background-color: var(--color-pd1);
 }
+
+.product-text-side{
+  padding-left: 150px;
+}
+
+.pd-icon{
+  width: 55px;
+  height:55px;
+}
+
+.product-des p{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px;
+  margin:auto;
+  margin-left: 0;
+  margin-top: -4px;
+}
+
+.pd-tag{
+padding-bottom: 40px;
+padding-bottom: 30px;
+}
+
+hr.solid {
+  border-top: 2px solid rgb(255, 255, 255);
+  margin-right: 50px;
+}
+
 
 /* Fonts */
 :root {
@@ -27,9 +58,10 @@
 
 /* Colors */
 :root {
-  --color-default: #364d59;
+  --color-default: #fff;
   --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-secondary: #fff;
+  --color-pd1: #009B63;
 }
 
 /* Smooth scroll behavior */
@@ -569,7 +601,7 @@ section {
 .get-started .content h3:after {
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 60px;
   height: 4px;
   background: var(--color-primary);
@@ -1126,7 +1158,8 @@ section {
 .alt-services .img-bg {
   background-size: cover;
   background-position: center center;
-  min-height: 400px;
+
+  
 }
 
 .alt-services h3 {
@@ -1136,12 +1169,14 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  line-height: 150%;
+  letter-spacing: .2rem;
 }
 
 .alt-services h3:after {
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 50px;
   height: 3px;
   background: var(--color-primary);
