@@ -593,7 +593,7 @@ section {
   .mobile-nav-show {
     position: relative;
     color: #fff;
-    font-size: 28px;
+    font-size: 48px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
