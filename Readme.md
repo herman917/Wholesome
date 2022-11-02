@@ -2,6 +2,9 @@
 1. Added Product Hero Card
 2. Finished Rough Product Page
 3. Adjusted header height 
+4. Logo scaled up
+5. Hambuger scaled up
+6. Landing Hero text color
 
 ### Dev log Oct 30
 1. Fix Menu link
