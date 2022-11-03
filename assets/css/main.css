@@ -10,6 +10,220 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Custom css' */
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+/*--------------------------------------------------------------
+# nav
+--------------------------------------------------------------*/
+.topmenu ul li.active a, .topmenu ul li a:hover {
+  text-decoration:none;
+  color: var(--color-brand01);
+  text-shadow: var(--color-brand02) 1px 1px 10px;
+}
+
+/* .topmenu ul li.active a, .topmenu ul li a:hover {
+  text-decoration:none;
+  color: var(--color-brand01);
+  text-shadow: var(--color-brand02) 1px 1px 10px;
+} */
+
+.nav {
+  padding: 90px 0 60px 0;
+  min-height: 0vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.nav h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.nav ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.nav ol a:hover {
+  text-decoration: underline;
+}
+
+.nav ol li+li {
+  padding-left: 10px;
+}
+
+.nav ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+
+
+
+@font-face {
+  font-family: 'genjyuu';
+  src:  url("/assets/fonts/genjyuugothic/GenJyuuGothic-P-Light.ttf");
+}
+
+@font-face {
+  font-family: 'thin-jp';
+  src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
+}
+
+/* Custom Fonts */
+
+.hero h3{
+  font-family: genjyuu;
+  letter-spacing: .4rem;
+  font-size: 50px;
+  font-weight:100;
+  color: var(--color-brand01);
+  text-shadow: var(--color-brand02) 1px 1px 10px;
+}
+
 #landing-logo{
   padding-bottom: 40px;
 }
@@ -52,7 +266,6 @@ hr.solid {
 .responsive {
   max-width: 100%;
   width:50%;
-  display:none !important;
 }
 
 .product-text h1{
@@ -93,8 +306,15 @@ hr.solid {
 }
 
 .hero h3{
-  color: var(--color-secondary);
+  
 }
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
 
 
 /* Fonts */
@@ -110,6 +330,9 @@ hr.solid {
   --color-primary: #feb900;
   --color-secondary: #fff;
   --color-pd1: #009B63;
+  --color-brand01: #F8B617;
+  --color-brand02: #EE7820;
+  --color-brand03: #DD5F0E;
 }
 
 /* Smooth scroll behavior */
@@ -446,6 +669,7 @@ section {
   }
 
   .navbar .dropdown ul {
+    
     display: block;
     position: absolute;
     left: 28px;
@@ -455,7 +679,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background-color: #1f1f1f;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
   }
@@ -468,7 +692,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--color-default);
+    color: var(--color-secondary);
     font-weight: 400;
   }
 

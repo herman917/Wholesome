@@ -1,3 +1,9 @@
+### Dev log Nov 3
+1. Updated dynamic nav
+2. Page Banner
+3. Removed Breadcrums
+4. [WIP] Added card component
+
 ### Dev log Nov 1
 1. Added Product Hero Card
 2. Finished Rough Product Page
