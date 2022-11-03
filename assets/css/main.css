@@ -11,6 +11,78 @@
 --------------------------------------------------------------*/
 /* Custom css' */
 
+/*--------------------------------------------------------------
+# nav
+--------------------------------------------------------------*/
+.topmenu ul li.active a, .topmenu ul li a:hover {
+  text-decoration:none;
+  color: var(--color-brand01);
+  text-shadow: var(--color-brand02) 1px 1px 10px;
+}
+
+/* .topmenu ul li.active a, .topmenu ul li a:hover {
+  text-decoration:none;
+  color: var(--color-brand01);
+  text-shadow: var(--color-brand02) 1px 1px 10px;
+} */
+
+.nav {
+  padding: 90px 0 60px 0;
+  min-height: 0vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.nav h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.nav ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.nav ol a:hover {
+  text-decoration: underline;
+}
+
+.nav ol li+li {
+  padding-left: 10px;
+}
+
+.nav ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+
+
+
 @font-face {
   font-family: 'genjyuu';
   src:  url("/assets/fonts/genjyuugothic/GenJyuuGothic-P-Light.ttf");
@@ -29,7 +101,7 @@
   font-size: 50px;
   font-weight:100;
   color: var(--color-brand01);
-  text-shadow: var(--color-brand02) 1px 0 10px;
+  text-shadow: var(--color-brand02) 1px 1px 10px;
 }
 
 #landing-logo{
@@ -477,6 +549,7 @@ section {
   }
 
   .navbar .dropdown ul {
+    
     display: block;
     position: absolute;
     left: 28px;
@@ -486,7 +559,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background-color: #1f1f1f;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
   }
@@ -499,7 +572,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--color-default);
+    color: var(--color-secondary);
     font-weight: 400;
   }
 
