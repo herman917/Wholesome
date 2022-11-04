@@ -100,8 +100,8 @@ body {
   overflow: hidden;
 }
 .pd-pic img{
-  max-height: 90vh;
-  margin-left: 10%;
+  max-height: 70vh;
+  margin-left: 5%;
 }
 .product-des{
   border: 1px solid rgba(125, 125, 125, 0.465);
@@ -112,7 +112,7 @@ body {
 .pd-intro p{
   color: var( --color-pd1);
   font-weight:600;
-  font-size:1.3em;
+  font-size:1.1em;
   line-height: 170%;
   font-family: sans-serif;
 }
@@ -286,7 +286,7 @@ body {
 
 @font-face {
   font-family: 'thin-jp';
-  src:  url("../fonts/mgenplus-1c-regular.ttf");
+  src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
 }
 
 /* Custom Fonts */
