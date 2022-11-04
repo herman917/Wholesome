@@ -20,10 +20,49 @@
   box-sizing: border-box;
 }
 
+.pd-intro{
+  max-width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+  padding-top:5%;
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8;
 }
+
+.red{
+  width:100%;
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.grid-con{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5%;
+}
+
+.item-1{
+  align-self: end;
+
+}
+
+.item-2{
+  align-self: center;
+  padding:20%;
+
+}
+
+.item{
+  border:1px solid rgba(113, 113, 113, 0.419);
+  border-radius: calc(var(--curve) * 1px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+
+
 
 .cards {
   display: grid;
@@ -34,6 +73,8 @@ body {
   list-style-type: none;
 }
 
+
+
 .card {
   position: relative;
   display: block;
@@ -41,7 +82,41 @@ body {
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.pd-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.pd-pic {
+  max-height: 90vh;
+  overflow: hidden;
+}
+.pd-pic img{
+  max-height: 90vh;
+  margin-left: 10%;
+}
+.product-des{
+  border: 1px solid rgba(125, 125, 125, 0.465);
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+}
+
+.pd-intro p{
+  color: var( --color-pd1);
+  font-weight:600;
+  font-size:1.3em;
+  line-height: 170%;
+  font-family: sans-serif;
+}
+
 
 .card__image {      
   width: 100%;
@@ -131,6 +206,7 @@ body {
   overflow: hidden;
 }    
 
+
 /*--------------------------------------------------------------
 # nav
 --------------------------------------------------------------*/
@@ -205,12 +281,12 @@ body {
 
 @font-face {
   font-family: 'genjyuu';
-  src:  url("/assets/fonts/genjyuugothic/GenJyuuGothic-P-Light.ttf");
+  src:  url("../fonts/genjyuugothic/GenJyuuGothic-Light.ttf");
 }
 
 @font-face {
   font-family: 'thin-jp';
-  src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
+  src:  url("../fonts/mgenplus-1c-regular.ttf");
 }
 
 /* Custom Fonts */
