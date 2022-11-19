@@ -1,3 +1,14 @@
+### Dev log Nov 19
+1. Product page MVP - 1.0
+2. Update Favicon ratio
+3. Landing font weight
+---
+
+TODOS:
+- Nested navigation indicator
+- Font check
+
+
 ### Dev log Nov 3
 1. Updated dynamic nav
 2. Page Banner
