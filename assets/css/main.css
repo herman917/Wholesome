@@ -20,10 +20,81 @@
   box-sizing: border-box;
 }
 
-.pd-intro{
+/* GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap:6vmin;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+/* FLEX */
+.flex-container {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items:center;
+  padding: 30px;
+  border-radius: calc(var(--curve) * 0.5px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.box:before {
+    content: "";
+    background: linear-gradient(5deg, #00ab84 -78%, #ee781f 138% );
+    transform: translate3d(29px, 30px, 0) scale(0.95);
+    filter: blur(25px);
+    opacity: var(0.74);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+    content: "";
+    background: inherit;
+    border-radius: inherit;
+}
+        
+
+.flex-container > div {
+  width: 90%;
+  text-align:left;
+}
+
+
+.flex-container img {
+  width: 90%;
+  margin: auto;
+}
+
+h3{
+  font-family: noto-tc;
+  font-weight: 600;
+}
+
+
+
+.page-content {
   max-width: 90%;
   margin-left:5%;
   margin-right:5%;
+}
+
+
+
+.pd-intro{
   padding-top:5%;
 }
 
@@ -66,11 +137,13 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 4rem auto;
   padding: 0;
   list-style-type: none;
+  align-items: center;
+  justify-items: center;
 }
 
 
@@ -285,6 +358,11 @@ body {
 }
 
 @font-face {
+  font-family: 'noto-tc';
+  src:  url("../fonts/Noto_Sans_TC");
+}
+
+@font-face {
   font-family: 'thin-jp';
   src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
 }
@@ -292,7 +370,7 @@ body {
 /* Custom Fonts */
 
 .hero h3{
-  font-family: genjyuu;
+  font-family: genjyuu !important;
   letter-spacing: .4rem;
   font-size: 50px;
   font-weight:900;
