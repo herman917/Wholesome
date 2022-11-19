@@ -295,7 +295,7 @@ body {
   font-family: genjyuu;
   letter-spacing: .4rem;
   font-size: 50px;
-  font-weight:100;
+  font-weight:900;
   color: var(--color-brand01);
   text-shadow: var(--color-brand02) 1px 1px 10px;
 }
