@@ -9,18 +9,41 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
-/* Custom css' */
+
+/* ------------------------Custom css'------------------------ */
+
+/* ------------------------字體------------------------ */
+
+@font-face {
+  font-family: 'genjyuu';
+  src:  url("../fonts/genjyuugothic/GenJyuuGothic-Light.ttf");
+}
+
+@font-face {
+  font-family: 'noto-tc';
+  src:  url("../fonts/Noto_Sans_TC");
+}
+
+@font-face {
+  font-family: 'thin-jp';
+  src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
+}
 
 :root {
   --surface-color: #fff;
   --curve: 40;
 }
 
+/* ------------------------ 預防網頁上滑 ------------------------ */
+
 * {
   box-sizing: border-box;
+    overscroll-behavior: none;
 }
 
-/* GRID */
+
+/* ------------------------ GRID ------------------------ */
+
 .grid-container {
   display: grid;
   gap:6vmin;
@@ -36,7 +59,7 @@
   text-align: center;
 }
 
-/* FLEX */
+/* ------------------------ FLEX ------------------------ */
 .flex-container {
   display: flex;
   justify-content: center;
@@ -64,16 +87,19 @@
   max-width: 280px;
 }
 
+/* ------------------------  ------------------------ */
+
 .product-page {
   max-width: 1600px;
   margin: auto;
 }
 
+/* ------------------------ 產品細項卡片 ------------------------ */
 .feature-box {
   padding: 20px;
-  border-radius: calc(var(--curve) * 0.5px);
   overflow: hidden;
   text-decoration: none;
+  /* ------------------------ 卡片視覺 ------------------------ */
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 15.5px );
   -webkit-backdrop-filter: blur( 15.5px );
@@ -82,7 +108,6 @@
 }
 
 .flex-container > div {
-  width: 90%;
   text-align:left;
 }
 
@@ -94,15 +119,24 @@
   
 }
 
-h3{
-  font-family: noto-tc;
-  font-weight: 600;
+.img-container{
+  display:flex;
+  justify-content: center;
 }
 
+
 .pd-tag{
+  margin-top:5vmin;
   padding: 0;
   text-align: center;
   line-height: 170% !important;
+}
+
+.img-center{
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
 }
 
 .page-content {
@@ -112,71 +146,26 @@ h3{
 }
 
 .pd-hero {
-  margin-top: 5.2vmin;
-  /* padding: 0px 0.8vmin;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 15.5px );
-  -webkit-backdrop-filter: blur( 15.5px );
-  border-radius: 10px;
-  border: 2px solid rgba( 255, 255, 255, 0.18 ); */
+  margin-top: 3vmin;
 }
 
 .pd-intro{
   padding-top:5%;
 }
 
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-.red{
-  width:100%;
-  background-color: red;
-}
-
-.blue{
-  background-color: blue;
-}
-
-.grid-con{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 5%;
-}
-
-.item-1{
-  align-self: end;
-
-}
-
-.item-2{
-  align-self: center;
-  padding:20%;
-
-}
-
-
-.item{
-  border:1px solid rgba(113, 113, 113, 0.419);
-  border-radius: calc(var(--curve) * 1px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
-
-
-
+/* ------------------------ 產品 icon 小按鈕  ------------------------ */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.2rem;
+  padding: 3vmin 0;
   margin: 0;
-  padding:0;
   padding-bottom: 4.5rem;
   list-style-type: none;
   align-items: center;
   justify-items: center;
 }
-
-
 
 .card {
   position: relative;
@@ -196,137 +185,25 @@ body {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 
   background: rgba( 0, 155, 99, 0.65 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );  
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );  
 }
 
 .card a {
   color: white !important;
 }
 
-.pd1{
-  height:20vh;
-  width:25vh;
-  background-color: var(--color-pd1);
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/* ------------------------ 產品主圖 ------------------------ */
+.flexi-pd-img {
+  margin-right: 0 !important;
 }
 
-
-.pd-pic {
-  max-height: 90vh;
-  overflow: hidden;
+.align-right{
+  align-items: flex-start;
 }
-.pd-pic img{
-  max-height: 70vh;
-  margin-left: 5%;
-}
-.product-des{
-  border: 1px solid rgba(125, 125, 125, 0.465);
-  border-radius: calc(var(--curve) * 1px);
-  overflow: hidden;
-}
-
-.pd-intro p{
-  color: var( --color-pd1);
-  font-weight:600;
-  font-size:1.4em;
-  line-height: 170%;
-  font-family: sans-serif;
-}
-
-
-.card__image {      
-  width: 100%;
-  height: auto;
-}
-
-.card__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;      
-  border-radius: calc(var(--curve) * 1px);    
-  background-color: var(--surface-color);      
-  transform: translateY(100%);
-  transition: .2s ease-in-out;
-}
-
-.card:hover .card__overlay {
-  transform: translateY(0);
-}
-
-.card__header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;    
-  background-color: var(--surface-color);
-  transform: translateY(-100%);
-  transition: .2s ease-in-out;
-}
-
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;      
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: var(--surface-color);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}       
-
-.card:hover .card__header {
-  transform: translateY(0);
-}
-
-.card__thumb {
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;      
-  border-radius: 50%;      
-}
-
-.card__title {
-  font-size: 1em;
-  margin: 0 0 .3em;
-  color: #6A515E;
-}
-
-.card__tagline {
-  display: block;
-  margin: 1em 0;
-  font-family: "MockFlowFont";  
-  font-size: .8em; 
-  color: #D7BDCA;  
-}
-
-.card__status {
-  font-size: .8em;
-  color: #D7BDCA;
-}
-
-.card__description {
-  padding: 0 2em 2em;
-  margin: 0;
-  color: #737373;
-  font-family: sans-serif;
-  font-weight:600;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}    
-
 
 /*--------------------------------------------------------------
 # nav
@@ -399,22 +276,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 
-
-@font-face {
-  font-family: 'genjyuu';
-  src:  url("../fonts/genjyuugothic/GenJyuuGothic-Light.ttf");
-}
-
-@font-face {
-  font-family: 'noto-tc';
-  src:  url("../fonts/Noto_Sans_TC");
-}
-
-@font-face {
-  font-family: 'thin-jp';
-  src:  url("/assets/fonts/mgenplus-1c-regular.ttf");
-}
-
 /* Custom Fonts */
 
 .hero h3{
@@ -424,6 +285,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-weight:900;
   color: var(--color-brand01);
   text-shadow: var(--color-brand02) 1px 1px 10px;
+  letter-spacing: 0.3em; 
 }
 
 #landing-logo{
@@ -456,8 +318,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .pd-tag{
-padding-bottom: 40px;
-padding-bottom: 30px;
+  padding-top: 5vmin;
+  color: var( --color-pd1);
+  font-weight:600;
+  font-size:1.8em;
+  line-height: 200%;
+  font-family: sans-serif;
+  text-align: left;
 }
 
 hr.solid {
@@ -505,10 +372,6 @@ hr.solid {
 
 .eighty{
   max-width:80%;
-}
-
-.hero h3{
-  
 }
 
 
