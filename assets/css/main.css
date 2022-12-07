@@ -14,6 +14,28 @@
 
 /* ------------------------字體------------------------ */
 
+#ifos-text {	
+    padding-top: 5vmin;	
+}
+
+.product-title {
+	font-weight: 700;
+    padding-top: 5vmin;	
+}
+
+.fish-color {
+	color: #003A84 !important;
+}
+
+.fish-bg-color {
+	background-color: #003A84 !important;
+}
+
+#fish-ifos {
+	width: 100px;
+	height: auto;
+}
+
 @font-face {
   font-family: 'genjyuu';
   src:  url("../fonts/genjyuugothic/GenJyuuGothic-Light.ttf");
@@ -316,7 +338,7 @@
   padding-top: 5vmin;
   color: var( --color-pd1);
   font-weight:600;
-  font-size:1.8em;
+  font-size:1.4em;
   line-height: 200%;
   font-family: sans-serif;
   text-align: left;
