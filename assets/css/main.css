@@ -25,10 +25,12 @@
 
 .fish-color {
 	color: #003A84 !important;
+
 }
 
 .fish-bg-color {
 	background-color: #003A84 !important;
+  color: white;
 }
 
 #fish-ifos {
@@ -121,12 +123,18 @@
   padding: 20px;
   overflow: hidden;
   text-decoration: none;
+
+
   /* ------------------------ 卡片視覺 ------------------------ */
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 15.5px );
   -webkit-backdrop-filter: blur( 15.5px );
   border-radius: 10px;
   border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.project-des{
+  padding-bottom: 10vmin;
 }
 
 .flex-container > div {
@@ -246,6 +254,8 @@
 .align-right{
   align-items: flex-start;
 }
+
+
 
 /*--------------------------------------------------------------
 # nav
