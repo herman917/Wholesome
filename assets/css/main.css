@@ -111,6 +111,10 @@
   max-width: 280px;
 }
 
+.flex-item-gap{
+  padding: 3vmin;
+}
+
 /* ------------------------  ------------------------ */
 
 .product-page {
@@ -131,6 +135,14 @@
   -webkit-backdrop-filter: blur( 15.5px );
   border-radius: 10px;
   border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.portfolio-description{
+  padding:3vmin;
+}
+
+.portfolio-description h3{
+  padding-bottom: 2vmin;
 }
 
 .project-des{
