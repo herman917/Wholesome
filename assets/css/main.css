@@ -33,6 +33,11 @@
   color: white;
 }
 
+.lutein-bg-color {
+	background-color: #FCC92C !important;
+  color: white;
+}
+
 #fish-ifos {
 	width: 100px;
 	height: auto;
