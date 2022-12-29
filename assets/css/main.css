@@ -823,6 +823,10 @@ section {
     transition: 0.3s;
   }
 
+  #home-navbar .dropdown ul {
+    background-color: #f5f5f5;
+  }
+
   .navbar .dropdown ul li {
     min-width: 200px;
   }
