@@ -25,7 +25,6 @@
 
 .fish-color {
 	color: #003A84 !important;
-
 }
 
 .fish-bg-color {
@@ -33,9 +32,22 @@
   color: white;
 }
 
-.lutein-bg-color {
+.lutein-adult-bg-color {
+	background-color: #d84338 !important;
+  color: white;
+}
+
+.lutein-adult-color {
+	color: #d84338 !important;
+}
+
+.lutein-kid-bg-color {
 	background-color: #FCC92C !important;
   color: white;
+}
+
+.lutein-kid-color {
+	color: #FCC92C !important;
 }
 
 #fish-ifos {
