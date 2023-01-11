@@ -93,6 +93,18 @@
   --curve: 40;
 }
 
+/* ------------------------ about ------------------------ */
+.img-bg{
+  display: flex;
+  height:30vh;
+  align-items: center;
+}
+
+.img-bg h3{
+  margin:auto !important;
+  text-align: center;
+}
+
 /* ------------------------ 預防網頁上滑 ------------------------ */
 
 * {
@@ -1710,7 +1722,11 @@ section {
 
 .about .our-story {
   padding: 40px;
-  background-color: #f5f6f7;
+  background-color: var(--color-brand01);
+}
+
+.our-story p{
+  color:var(--color-secondary)
 }
 
 @media (min-width: 991px) {
@@ -2314,7 +2330,7 @@ section {
 
 .recent-blog-posts .post-item .post-title {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: 700;
   transition: 0.3s;
   margin-bottom: 15px;
@@ -2576,7 +2592,7 @@ section {
 
 .blog .posts-list .post-title {
   font-size: 24px;
-  color: var(--color-secondary);
+  color: var(--color-brand01);
   font-weight: 700;
   transition: 0.3s;
   margin-bottom: 15px;
