@@ -120,10 +120,13 @@
   gap:6vmin;
 }
 
+.grid-2{
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .grid-features{
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  
 }
 
 .grid-item {
@@ -196,6 +199,11 @@
   padding-bottom: 2vmin;
 }
 
+.portfolio-description h4{
+  padding-top: 4vmin;
+  line-height: 170%;
+}
+
 .project-des{
   padding-bottom: 10vmin;
 }
@@ -204,12 +212,21 @@
   text-align:left;
 }
 
+.flex-vertical > div {
+  text-align:left;
+}
+
 
 .flex-container img {
   width: 100%;
   margin: auto;
   border-radius: calc(var(--curve) * 0.3px);
-  
+}
+
+.flex-vertical img {
+  width: 100%;
+  margin: auto;
+  border-radius: calc(var(--curve) * 0.3px);
 }
 
 .img-container{
