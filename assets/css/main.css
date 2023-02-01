@@ -423,11 +423,11 @@
 
 .hero h3{
   font-family: genjyuu !important;
-  font-size: 38px;
+  font-size: 28px;
   font-weight:900;
   color: var(--color-brand01);
   /* text-shadow: var(--color-brand02) 1px 1px 10px; */
-  letter-spacing: 2.7em; 
+  letter-spacing: 0.8em;  /* 2.7*/
   padding-bottom: 27vmin
 }
 
