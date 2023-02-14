@@ -10,12 +10,19 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link type="image/x-icon" href="assets/img/favicon.png" rel="icon">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+  <!--  Custom fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -23,10 +30,6 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="scripts/scripts.js" type="text/javascript"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -44,108 +47,163 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">  	  
     <div class="topmenu container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="../../index.html" class="logo d-flex align-items-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="assets/img/Logo-Hero.png" alt="">        	
+      <img src="../../assets/img/Logo-Hero.png" alt="">        	
       </a>  
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list fa-fw"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>         
-          <li><a href="pages\cn\about.html">關於活森</a></li> 
-		      <li><a href="pages\cn\blog.html">最新消息</a></li>
+          <li><a href=".\pages\cn\about.html">關於活森</a></li>  
+		  <li><a href=".\pages\cn\blog.html">最新消息</a></li>
           <li class="dropdown"><a href="#"><span>活森產品</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="pages\cn\products.html">葡萄糖胺</a></li>
-              <li><a href="pages\cn\products-fish.html">魚油</a></li>
-              <li class="dropdown"><a href="pages\cn\lutein-adult.html"><span>葉黃素</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href=".\pages\cnproducts.html">葡萄糖胺</a></li>
+              <li><a href=".\pages\cnproducts-fish.html">魚油</a></li>
+              <li class="dropdown"><a href=".\pages\cnlutein-adult.html"><span>葉黃素</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="pages\cn\lutein-adult.html">成人</a></li>
-                  <li><a href="pages\cn\lutein-kid.html">兒童</a></li>
+                  <li><a href=".\pages\cnlutein-adult.html">成人</a></li>
+                  <li><a href=".\pages\cnlutein-kid.html">兒童</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="pages\cn\probiotics-adult.html"><span>益生菌</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href=".\pages\cnprobiotics-adult.html"><span>益生菌</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="pages\cn\probiotics-adult.html">成人</a></li>
-                  <li><a href="pages\cn\probiotics-kid.html">兒童</a></li>
+                  <li><a href=".\pages\cnprobiotics-adult.html">成人</a></li>
+                  <li><a href=".\pages\cnprobiotics-kid.html">兒童</a></li>
                 </ul>
               </li>
             </ul>
           </li>		  
-          <!--<li><a href="pages\cn\shop-locations.html">銷售據點</a></li>  
-          <li><a href="#">中 / EN</a></li>-->		  
+          <li><a href=".\pages\cnshop-locations.html">銷售據點</a></li>
+          <li><a href="#">中 / EN</a></li>		  
         </ul>
       </nav><!-- .navbar -->
     </div>	
   </header><!-- End Header -->
 
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="nav d-flex align-items-center" style="background-image: url(assets/img/knees.jpg);">
-
-    </div><!-- End Breadcrumbs -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row position-relative">       
-
-          <div class="col-lg-7">
-            <h2>活森給您好生活</h2>
-            <div class="our-story">
-              <h3>WHOLESOME LIFE</h3>
-              <p>
-                不僅象徵「 健康 」，也意味著讓身心更圓滿的期許<br>                
-                活森秉持著以天然為導向<br>
-                嚴選世界頂級營養成分<br>
-                與美國頂尖團隊合作研發<br>
-                專為亞洲體質打造讓活力森森不息的保健品
-              </p>
-              <!-- <div class="watch-video d-flex align-items-center position-relative">
-                <i class="bi bi-cart"></i>
-                <a href="/pages/cn/" class="glightbox stretched-link">Watch Video</a>
-              </div> -->
-            </div>
-          </div>
-		  
-		   <div class="col-lg-5 about-img" style="background-image: url(assets/img/home-product.jpg);"></div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End About Section -->
-
-
-    <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="info d-flex align-items-center">
       <div class="container">
-
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/about/brand1.png);" data-aos="zoom-in" data-aos-delay="100">F
-            <h3>您的健康從這裡開始</h3>
-          </div>
-          <div class="col-lg-5 img-bg" style="background-image: url(assets/img/about/brand2.png);" data-aos="zoom-in" data-aos-delay="100">
-            <h3>自然生長<br>
-              有益健康
-            </h3>
-          </div>
-          <div class="col-lg-4 img-bg" style="background-image: url(assets/img/about/brand3.png);" data-aos="zoom-in" data-aos-delay="100">
-            <h3>頂尖團隊<br>
-              安心製程</h3>
-          </div>
-          <div class="col-lg-7 img-bg" style="background-image: url(assets/img/about/brand4.png);" data-aos="zoom-in" data-aos-delay="100">
-            <h3>美國製造
-            </h3>
-          </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 text-center">
+		        <h3 data-aos="fade-down" id="hero-tagline">
+		        <!--<img src="assets/img/Logo-Hero.png" width="80" alt="">-->
+		        <span>活森給您好生活</span></h3>
+            <!--<img id="landing-logo" src="assets/img/Logo-Hero.png" alt="">-->
+            <!--<a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">探 索</a>-->
           </div>
         </div>
-
       </div>
-    </section><!-- End Alt Services Section -->
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image:url(assets/img/hero-carousel/back1.jpg)"></div>
+      <div class="carousel-item" style="background-image:url(assets/img/hero-carousel/back2.jpg)"></div>  
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">  
+          <div class="row gy-4 posts-list">  
+            <div class="col-xl-4 col-md-6">
+              <div class="post-item position-relative h-100">
+  
+                <div class="post-img position-relative overflow-hidden">
+                  <img src="../../assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                  <span class="post-date">2023-2-1</span>
+                </div>
+  
+                <div class="post-content d-flex flex-column">
+  
+                  <h3 class="post-title">活森給您好生活</h3>
+  
+                  <div class="meta d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                      <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
+                    </div>
+                    <span class="px-3 text-black-50">/</span>
+                    <div class="d-flex align-items-center">
+                      <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                    </div>
+                  </div>
+  
+                  <p>
+                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                  </p>
+  
+                  <hr>
+  
+                  <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+  
+                </div>
+  
+              </div>
+            </div><!-- End post list item -->
+			<div class="col-xl-4 col-md-6">
+              <div class="post-item position-relative h-100">
+  
+                <div class="post-img position-relative overflow-hidden">
+                  <img src="../../assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                  <span class="post-date">2023-2-1</span>
+                </div>
+  
+                <div class="post-content d-flex flex-column">
+  
+                  <h3 class="post-title">活森產品上市囉</h3>
+  
+                  <div class="meta d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                      <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
+                    </div>
+                    <span class="px-3 text-black-50">/</span>
+                    <div class="d-flex align-items-center">
+                      <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                    </div>
+                  </div>
+  
+                  <p>
+                    葉黃素.
+                  </p>
+  
+                  <hr>
+  
+                  <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+  
+                </div>
+  
+              </div>
+            </div><!-- End post list item -->
+			
+			
+          </div><!-- End blog posts list -->
+
+          <div class="blog-pagination">
+            <ul class="justify-content-center">
+              <li class="active"><a href="pages/cn/blog.html">閱讀更多</a></li>
+            </ul>
+          </div><!-- End blog pagination -->
+  
+        </div>
+      </section><!-- End Blog Section -->
+
+  <main id="main"> 
+   
   </main><!-- End #main -->
+  
 
    <!-- ======= Footer ======= -->
    <footer id="footer" class="footer">
@@ -158,15 +216,14 @@
             <div class="footer-info">
               <h3>活森 Wholesome Life</h3>
               <p>
-                  <strong>Address: </strong> 675 Sycamore Dr. Suite 150, Milpitas, CA 95035, United States<br>
-                  <strong>TEL: </strong>886+ 03-473-3451<br>
-                  <strong>虹一代理進口 </strong><br>
+                <strong>地址: </strong> 桃園市平鎮區環南路二段11號19樓之4<br>
+                <strong>電話: </strong>(03) 473-7374<br>
               </p>
-              <!--<div class="social-links d-flex mt-3">
+              <div class="social-links d-flex mt-3">
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-line"></i></a>
-              </div>-->
+              </div>
             </div>
           </div><!-- End footer info column-->
 
@@ -179,7 +236,6 @@
 
   </footer>
   <!-- End Footer -->
-
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
